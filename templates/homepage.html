@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <title>Spam_Message_Finder</title>
+    </head>
+    <body>
+        <h1>SPAM MESSAGE DETECTOR</h1>
+        <h3> Write Your Message here!!!</h3>
+        <form action='/predict'method='POST'>
+            <label for="fmessg">Type Your Message:</label><br><br>
+            <input type="text" id="fmessg" name="fmessg" required="required" size="100" placeholder="Your Text" ><br>
+            <br>
+            <button type="submit" class="btn btn-primary btn-block btn-large" >Predict</button>
+        </form>
+        <br>
+        {{ prediction_text }}
+    </body>
+</html>
