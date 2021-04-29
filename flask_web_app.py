@@ -30,9 +30,9 @@ def predict():
         
         y_pred = model.predict(vect)
         if y_pred==1:
-            p="Beaware!!!! It's a Spam"
+            p="Beware!!!! It's a Spam"
         else:
-            p="You are Safe.It's not a Spam"
+            p="You are Safe.It's NOT a Spam"
         return render_template('homepage.html',prediction_text=p)
 
 
